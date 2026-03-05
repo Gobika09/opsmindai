@@ -1,0 +1,38 @@
+{
+  "name": "opsmind-backend",
+  "version": "1.0.0",
+  "description": "OpsMind AI - Enterprise SOP Neural Brain Backend",
+  "type": "module",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "keywords": [
+    "mern",
+    "rag",
+    "ai",
+    "opsmind",
+    "backend"
+  ],
+  "author": "Infotact AI Lab",
+  "license": "ISC",
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "@xenova/transformers": "^2.17.2",
+    "bcryptjs": "^3.0.3",
+    "compute-cosine-similarity": "^1.1.0",
+    "cors": "^2.8.6",
+    "dotenv": "^17.3.1",
+    "express": "^4.22.1",
+    "groq-sdk": "^0.37.0",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.2.1",
+    "multer": "^2.0.2",
+    "pdfjs-dist": "^5.4.624",
+    "uuid": "^13.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
