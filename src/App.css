@@ -1,0 +1,71 @@
+.app-container {
+  max-width: 900px;
+  margin: 0 auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  padding: 20px;
+  background: #f3f4f6;
+  min-height: 100vh;
+}
+
+h1 {
+  color: #1f2937;
+}
+
+.dropzone {
+  border: 3px dashed #3b82f6;
+  border-radius: 10px;
+  padding: 40px;
+  margin: 20px 0;
+  background: #e0f2fe;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dropzone:hover {
+  background: #bae6fd;
+  border-color: #2563eb;
+}
+
+.upload-btn {
+  background: #3b82f6;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.upload-btn:hover {
+  background: #2563eb;
+}
+
+.vectors-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.vector-card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.vector-card h3 {
+  margin: 0 0 10px;
+  color: #111827;
+}
+
+.vector-card p {
+  color: #374151;
+}
+
+.vector-card small {
+  color: #6b7280;
+}

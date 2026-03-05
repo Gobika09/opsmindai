@@ -1,0 +1,233 @@
+/* ===============================
+   LOGIN / AUTH PAGE STYLES
+================================= */
+
+.auth-wrap {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 18px;
+
+  background:
+    radial-gradient(900px 500px at 10% 10%, rgba(56, 189, 248, 0.35), transparent 60%),
+    radial-gradient(900px 500px at 90% 15%, rgba(168, 85, 247, 0.28), transparent 60%),
+    radial-gradient(900px 500px at 50% 100%, rgba(34, 197, 94, 0.18), transparent 60%),
+    linear-gradient(180deg, #f8fafc, #eef2ff);
+
+  font-family: "Segoe UI", system-ui;
+}
+
+/* ===============================
+   MAIN SHELL
+================================= */
+
+.auth-shell {
+  width: min(1100px, 100%);
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  border-radius: 22px;
+  overflow: hidden;
+
+  border: 1px solid rgba(2, 6, 23, 0.10);
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 24px 60px rgba(2, 6, 23, 0.12);
+}
+
+/* ===============================
+   LEFT SIDE
+================================= */
+
+.auth-left {
+  padding: 28px;
+  background:
+    linear-gradient(135deg, rgba(56,189,248,0.18), rgba(168,85,247,0.14)),
+    rgba(255,255,255,0.7);
+
+  border-right: 1px solid rgba(2, 6, 23, 0.08);
+  color: #111;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 900;
+  font-size: 18px;
+}
+
+.brand-icon {
+  font-size: 22px;
+}
+
+.hero {
+  margin: 18px 0 10px;
+  font-size: 40px;
+  line-height: 1.08;
+  letter-spacing: -0.8px;
+}
+
+.hero-sub {
+  margin: 0;
+  max-width: 520px;
+  line-height: 1.5;
+  color: #333;
+}
+
+/* ===============================
+   RIGHT SIDE (FORM)
+================================= */
+
+.auth-right {
+  padding: 22px;
+  display: grid;
+  gap: 12px;
+  align-content: start;
+  color: #000;
+}
+
+/* ===============================
+   CARD
+================================= */
+
+.card {
+  border-radius: 18px;
+  padding: 18px;
+  background: white;
+  border: 1px solid rgba(2, 6, 23, 0.12);
+}
+
+/* Title */
+
+.card-title {
+  margin: 6px 0 4px;
+  font-weight: 900;
+  font-size: 20px;
+  color: #000;
+}
+
+/* Subtitle */
+
+.card-sub {
+  margin: 0 0 16px;
+  font-size: 14px;
+  color: #000;
+}
+
+/* ===============================
+   FORM
+================================= */
+
+.form {
+  display: grid;
+  gap: 12px;
+}
+
+/* Labels */
+
+.field label {
+  display: block;
+  font-size: 13px;
+  margin-bottom: 6px;
+  font-weight: 700;
+  color: #000;
+}
+
+/* Inputs */
+
+.field input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(2, 6, 23, 0.18);
+  outline: none;
+  background: #fff;
+  color: #000;
+  font-size: 14px;
+}
+
+/* Placeholder */
+
+.field input::placeholder {
+  color: #777;
+}
+
+/* Focus */
+
+.field input:focus {
+  border-color: #38bdf8;
+  box-shadow: 0 0 0 4px rgba(56, 189, 248, 0.15);
+}
+
+/* ===============================
+   BUTTON
+================================= */
+
+.primary {
+  margin-top: 6px;
+  padding: 12px 14px;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  font-weight: 900;
+  color: white;
+  font-size: 15px;
+
+  background: linear-gradient(90deg, #38bdf8, #a855f7);
+  transition: all 0.2s ease;
+}
+
+.primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 24px rgba(2, 6, 23, 0.15);
+}
+
+.primary:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* ===============================
+   FOOTER
+================================= */
+
+.small {
+  margin-top: 10px;
+  font-size: 13px;
+  color: #333;
+}
+
+.link {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-weight: 900;
+  color: #6d28d9;
+  padding: 0;
+}
+
+.legal {
+  font-size: 12px;
+  text-align: center;
+  padding: 6px 0;
+  color: #444;
+}
+
+/* ===============================
+   RESPONSIVE
+================================= */
+
+@media (max-width: 900px) {
+
+  .auth-shell {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    font-size: 34px;
+  }
+
+  .auth-left {
+    display: none;
+  }
+}
