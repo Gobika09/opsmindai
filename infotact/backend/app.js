@@ -24,7 +24,6 @@ app.use(express.json());
 
 //  Debug logs
 console.log("MONGO URI LOADED:", process.env.MONGO_URI ? "YES" : "NO");
-console.log("GEMINI KEY LOADED:", process.env.GEMINI_API_KEY ? "YES" : "NO");
 console.log("GROQ KEY LOADED:", process.env.GROQ_API_KEY ? "YES" : "NO"); // ✅ ADDED
 
 //  MongoDB Connection
